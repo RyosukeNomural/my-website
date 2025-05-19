@@ -7,7 +7,7 @@ html{
 .pop{font-family: "Poppins", sans-serif;}
 
 .container{
-    width: 90%;
+    width: 70%;
     max-width: 1120px;
     margin: 0 auto;
     position: relative;
@@ -121,7 +121,7 @@ main {
     background-position: center;
     background-size: cover;
     height: 370px;
-    width: 420px;
+    width: 370px;
     margin-bottom: 90px;
 
 }
