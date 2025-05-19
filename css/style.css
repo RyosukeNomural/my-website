@@ -6,11 +6,13 @@ html{
 }
 .pop{font-family: "Poppins", sans-serif;}
 
+@media screen and (max-width: 768px) {
 .container{
+    max-width: 100%;
     width: 90%;
-    max-width: 1120px;
     margin: 0 auto;
     position: relative;
+    }
 }
 .flex {
     display: flex;
