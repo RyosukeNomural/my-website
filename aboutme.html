@@ -27,6 +27,32 @@
     });
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // メニュー開閉
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.header_menu');
+  
+      if (menuToggle && menu) {
+        menuToggle.addEventListener('click', function () {
+          menu.classList.toggle('active');
+        });
+      }
+  
+      // TOPへ戻るボタン
+      const backToTop = document.getElementById("backToTop");
+      if (backToTop) {
+        backToTop.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      }
+    });
+  </script>
+  
+
 <body>
 
     <header>
@@ -81,16 +107,14 @@
                             
                             <li>
                                 <a href="http://dstep.cbms.k.u-tokyo.ac.jp/"">
-                                <span style="color: blue;">バイオデータプログラミング演習I  (DSTEP) </span> TA
+                                <span style="color: blue;">バイオデータプログラミング演習I  (DSTEP)</span> TA
                                 </a>
                             </li>
-                            
-                             <li>
+                            <li>
                                 <a href="http://dstep.cbms.k.u-tokyo.ac.jp/"">
                                 <span style="color: blue;">創薬データサイエンス演習  (DSTEP)</span> TA
                                 </a>
                             </li>
-                            
                             <li>日本バイオインフォマティクス学会 会員</li>
                             <li>日本癌学会 会員</li>
                             <li>生命情報若手の会 会員</li>
@@ -133,6 +157,10 @@
         </section>
     </main>
 
-    
+<div class="copyright container">
+    <p>Copyright © Ryosueke Nomura. All Rights Reserved.</p>
+    <button id="backToTop">▲ TOP</button>
+</div>    
+
 </body>
 </html>
