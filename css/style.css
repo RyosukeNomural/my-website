@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-
 html{
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
@@ -184,17 +182,22 @@ main {
 #about-me ul li {
     margin-bottom: 8px;
 }
+.sp-only {
+    display: none;
+  }
 
 
 @media (max-width: 768px) {
     #about-me {
         margin-bottom: 20px;
+        text-align: left;
     }
-
+    
     .flex-about-me {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding-left: 10px;
     }
 
     #about-me h2 {
@@ -202,6 +205,8 @@ main {
         font-weight: 700;
         color: #4ab4ba;
         margin-bottom: 16px;
+        align-items: flex-start;
+        padding-left: 10px;
     }
 
     #about-me h3 {
@@ -221,7 +226,16 @@ main {
     #about-me ul li {
         font-size: 12px; 
         margin-bottom: 8px;
+        text-align: left;
     }
+    .sp-only {
+        display: inline;
+      }
+    .sp-indent {
+        display: inline-block;
+        text-indent: 0;
+        padding-left: 3.4em; /* ← インデント量を調整する（"東京大学大学院"と揃うまで） */
+     }
 }
 
 table {
