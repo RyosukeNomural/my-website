@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RyosukeNomura</title>
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.header_menu');
+  
+      menuToggle.addEventListener('click', function () {
+        menu.classList.toggle('active');
+      });
+    });
+</script>
+
+<body>
+
+    <header>
+        <div class="container flex pop">
+            <a href="index.html" class="logo">
+                <span>Nomu</span>pedia
+            </a>
+            <div class="menu-toggle">☰</div> <!-- ハンバーガーアイコン -->
+            <nav>
+                <ul class="header_menu flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="#publication">Publication</a></li>
+                    <li><a href="#others">Others</a></li>
+                <ul>  
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="research" class="container">
+            <h2 class="title">Research</h2>
+            <div class="flex-research">
+                <div class="research-img-1"></div>
+                <div class="text">
+                    <h3>空間トランスクリプトーム (ST) 解析</h3>
+                    <p>近年、ST解析によって遺伝子発現を座標情報とともに取得可能となり、これを視覚化できるツールも開発されいます。
+                    しかし、検出可能な遺伝子が5000種類以上に増加した現在において、目視での解釈には限界があります。</p>
+                    <p>特にがん微小環境の理解に焦点を当てて、STデータを機械的に解析するツールを独自に開発しています。</p>
+                </div>
+            </div>
+
+            <div class="flex-research">    
+                <div class="research-img-2"></div>
+                <div class="text">
+                    <h3>データベース構築</h3>
+                    <p>ST解析で得られた知見を元に、患者さんの予後との関係をまとめたデータベースを構築中です。将来的には新規の診断方法や治療戦略の確立への「バイオマーカー」を探索する基盤となることが期待されます。</p>
+                </div>
+            </div>
+
+            <div class="flex-research">    
+                <div class="research-img-3"></div>
+                <div class="text">
+                    <h3>画像解析</h3>
+                    <p>MRI画像やCT画像などの医療現場で蓄積された大量の画像データをAIによって処理しています。</p>
+                </div>
+            </div>
+        </section>
