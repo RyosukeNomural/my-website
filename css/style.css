@@ -149,6 +149,7 @@ main {
     padding-top: 90px;  /* ヘッダーの分の余白 */
   }
  
+/* -------------------------------------------------------------------- */ 
 /*About me*/
 #about-me {
     margin-bottom: 20px;
@@ -180,6 +181,160 @@ main {
 
 }
 #about-me ul li {
+    margin-bottom: 8px;
+}
+.sp-only {
+    display: none;
+  }
+
+
+@media (max-width: 768px) {
+    #about-me {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .flex-about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    #about-me h2 {
+        font-size: 24px; 
+        font-weight: 700;
+        color: #4ab4ba;
+        margin-bottom: 16px;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    #about-me h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .about-me-img {
+        background-image: url(../img/face_img.png);
+        background-position: center;
+        background-size: cover;
+        height: 220px;
+        width: 350px;
+        margin-bottom: 30px;
+    }
+    #about-me ul li {
+        font-size: 12px; 
+        margin-bottom: 8px;
+        text-align: left;
+    }
+    .sp-only {
+        display: inline;
+      }
+    .sp-indent {
+        display: inline-block;
+        text-indent: 0;
+        padding-left: 3.4em; /* ← インデント量を調整する（"東京大学大学院"と揃うまで） */
+     }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: normal;
+    margin-bottom: 50px;
+  }
+ 
+th, td {
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+    text-align: left;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* iOS対策 */
+    }
+
+    table {
+        min-width: 600px; /* テーブルが狭すぎないよう固定幅 */
+        table-layout: auto; /* 内容に応じてカラム幅を調整 */
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 11px;
+    }
+    /* 一番左のカラムだけ幅を確保＋改行防止 */
+    th:first-child,
+    td:first-child {
+        min-width: 80px;
+        white-space: nowrap;
+    }
+}
+/* -------------------------------------------------------------------- */ 
+
+/* Reasearch */
+#research{
+    margin-bottom: 20px;
+}
+.flex-research {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+  }
+#research h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4ab4ba;
+    margin-bottom: 20px;
+}
+
+#research h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.research-img-1 {
+    background-image: url(../img/spatial_img.png);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 980px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+
+}
+.research-img-2 {
+    background-image: url(../img/database.png);
+    background-position: center;
+    background-size: cover;
+    height: 140px;
+    width: 980px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+
+}
+.research-img-3 {
+    background-image: url(../img/img_analysis.png);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 440px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+
+}
+#research ul li {
+    margin-bottom: 8px;
+}
+#research p {
     margin-bottom: 8px;
 }
 .sp-only {
