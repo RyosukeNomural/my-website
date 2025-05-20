@@ -165,18 +165,23 @@ main {
     color: #4ab4ba;
     margin-bottom: 20px;
 }
-
+#about-me p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 #about-me h3 {
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .about-me-img {
     background-image: url(../img/face_img.png);
     background-position: center;
     background-size: cover;
-    height: 370px;
-    width: 370px;
+    height: 380px;
+    width: 380px;
     margin-bottom: 90px;
 
 }
@@ -214,6 +219,11 @@ main {
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 20px;
+    }
+    #about-me p {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
     }
 
     .about-me-img {
@@ -277,8 +287,7 @@ th, td {
     }
 }
 /* -------------------------------------------------------------------- */ 
-
-/* Reasearch */
+/* Research */
 #research{
     margin-bottom: 20px;
 }
@@ -329,7 +338,6 @@ th, td {
     width: 440px;
     margin-bottom: 50px;
     margin-right: 20px;
-
 }
 #research ul li {
     margin-bottom: 8px;
@@ -340,7 +348,6 @@ th, td {
 .sp-only {
     display: none;
   }
-
 
 @media (max-width: 768px) {
     #research {
@@ -427,10 +434,130 @@ table {
     font-weight: normal;
     margin-bottom: 50px;
   }
- 
 th, td {
     border-bottom: 1px solid #ccc;
     font-weight: normal;
     text-align: left;
     padding: 10px;
 }
+
+/* -------------------------------------------------------------------- */ 
+/* Others */
+
+/* Research */
+#others{
+    margin-bottom: 20px;
+}
+#others h2 {
+    text-align: left;
+    font-size: 36px; 
+    font-weight: 700;
+    color: #4ab4ba;
+    margin-bottom: 16px;
+    align-items: flex-start;
+}
+
+#others h3 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#others h4 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.book-box {
+display: flex;
+align-items: flex-start;
+margin-bottom: 40px;
+}
+
+.book-box img {
+width: 200px;
+margin-right: 0;
+}
+
+.book-text {
+margin-left: 0;
+padding-left: 40px;
+}
+.book-text h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    }
+.book-text p {
+margin-bottom: 7px;
+font-size: 18px;
+}
+.book-row {
+    display: flex;
+    justify-content: space-between; /* スペース調整したい場合 */
+    flex-wrap: wrap; /* 画面幅が足りないときは折り返す */
+    gap: 20px; /* ボックス間の間隔 */
+}
+.book-box-row {
+    display: flex;
+    width: 500px;
+    height: 250px;  
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+.book-row img {
+    width: 150px;
+    height: auto;
+  }
+@media (max-width: 768px) {
+    #others{
+        margin-bottom: 10px;
+    }
+    #others h2 {
+        font-size: 24px; 
+        font-weight: 700;
+        color: #4ab4ba;
+        margin-bottom: 16px;
+        align-items: flex-start;
+    }
+    #others h3 {
+        font-size: 18px; 
+        font-weight: 700;
+        margin-bottom: 16px;
+        align-items: flex-start;
+    }
+    #others h4 {
+        text-align: left;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+    .book-box {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+    .book-box img {
+        width: 150px;
+        margin-right: 0;
+    }
+    .book-text {
+        padding-left: 20px;
+    }
+    .book-text h5 {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    .book-text p {
+        font-size: 12px;
+    }
+}
+
+
+
