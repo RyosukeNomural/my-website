@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RyosukeNomura</title>
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.header_menu');
+  
+      menuToggle.addEventListener('click', function () {
+        menu.classList.toggle('active');
+      });
+    });
+</script>
+
+<body>
+
+    <header>
+        <div class="container flex pop">
+            <a href="index.html" class="logo">
+                <span>Nomu</span>pedia
+            </a>
+            <div class="menu-toggle">☰</div> <!-- ハンバーガーアイコン -->
+            <nav>
+                <ul class="header_menu flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="#publication">Publication</a></li>
+                    <li><a href="others.html">Others</a></li>
+                <ul>  
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="others" class="container">
+            <h2 class="title">Others</h2>
+            <h3 class="title">BIセミナー</h3>
+            <h4>(ほぼ)毎週土曜日、学生や臨床医などを対象に勉強会を行っています。ご興味ある方は rynomur[at]ncc.go.jpまで。</h4>
+            <div class="book-box">
+                <a href="https://www.amazon.co.jp/%E3%81%A4%E3%81%8F%E3%82%8A%E3%81%AA%E3%81%8C%E3%82%89%E5%AD%A6%E3%81%B6%EF%BC%81LLM-Compass-Books%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-Sebastian-Raschka/dp/4839987807/ref=pd_rhf_se_s_pd_crcd_d_sccl_1_4/358-5785965-0803917?pd_rd_w=F12Ja&content-id=amzn1.sym.96066f9f-3921-44e5-9ac1-a4b153bf416c&pf_rd_p=96066f9f-3921-44e5-9ac1-a4b153bf416c&pf_rd_r=QXC5GC67YQTTXVY72QSS&pd_rd_wg=f6bVC&pd_rd_r=338da2d8-368a-4c67-9556-0c80b38f4492&pd_rd_i=4839987807&psc=1" target="_blank" rel="noopener noreferrer">
+                    <img src="https://m.media-amazon.com/images/I/71thzttdkSL._SY522_.jpg" alt="No image">
+                </a>
+                <div class="book-text">
+                  <h5>つくりながら学ぶ！LLM 自作入門</h5>
+                  <p>現在取り扱い中!!!!!</p>
+                  <p>Sebastian Raschka(著), 巣籠悠輔(監修,翻訳), 株式会社クイープ(翻訳)</p><br>
+                  <p>Transformerについて復習がてらコーディングしています!</p>
+                  <p style="text-decoration: line-through;">インターンの経験からわかりやすく教えたいところ</p>
+                </div>
+            </div>
+
+            <div class="book-box">
+                <a href="https://www.amazon.co.jp/%E5%85%A8%E3%82%B2%E3%83%8E%E3%83%A0%E3%83%BB%E3%82%A8%E3%82%AF%E3%82%BD%E3%83%BC%E3%83%A0%E9%81%BA%E4%BC%9D%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90%E3%80%9CPython%EF%BC%8CR%E3%81%A7%E5%AE%9F%E8%B7%B5%E3%81%97%E3%81%A6%E8%BA%AB%E3%81%AB%E3%81%A4%E3%81%8F%EF%BC%8C%E6%9C%AA%E7%9F%A5%E3%81%AE%E9%81%BA%E4%BC%9D%E8%A6%81%E5%9B%A0%E3%81%AE%E6%8E%A2%E7%B4%A2%E3%81%A8%E7%96%BE%E6%82%A3%E3%83%AA%E3%82%B9%E3%82%AF%E4%BA%88%E6%B8%AC-%E5%AE%9F%E9%A8%93%E5%8C%BB%E5%AD%A6%E5%88%A5%E5%86%8A-%E7%94%B0%E5%AE%AE-%E5%85%83/dp/4758122660/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=KMLE5IHNNUPL&dib=eyJ2IjoiMSJ9.a_Ixv0V5J7gJwm43acrYgGNbq0zaMO6zprvFpRM3ZJZMN7B8OBHKKXZbANUa8k6vDl4bsfCePspuGxsKU3Rz0Dm9JSfu6l8nX3Ws9itlpXw.75Xj8_UikKy8Vhrrxp6w8DaQaJNwML9Xbr6xfRG8KiE&dib_tag=se&keywords=%E5%85%A8%E3%82%B2%E3%83%8E%E3%83%A0%E3%83%BB%E3%82%A8%E3%82%AF%E3%82%BD%E3%83%BC%E3%83%A0%E9%81%BA%E4%BC%9D%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90%E3%80%9CPython%EF%BC%8CR%E3%81%A7%E5%AE%9F%E8%B7%B5%E3%81%97%E3%81%A6%E8%BA%AB%E3%81%AB%E3%81%A4%E3%81%8F%EF%BC%8C%E6%9C%AA%E7%9F%A5%E3%81%AE%E9%81%BA%E4%BC%9D%E8%A6%81%E5%9B%A0%E3%81%AE%E6%8E%A2%E7%B4%A2%E3%81%A8%E7%96%BE%E6%82%A3%E3%83%AA%E3%82%B9%E3%82%AF&qid=1747755013&s=books&sprefix=%E5%85%A8%E3%82%B2%E3%83%8E%E3%83%A0+%E3%82%A8%E3%82%AF%E3%82%BD%E3%83%BC%E3%83%A0%E9%81%BA%E4%BC%9D%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90+python+r%E3%81%A7%E5%AE%9F%E8%B7%B5%E3%81%97%E3%81%A6%E8%BA%AB%E3%81%AB%E3%81%A4%E3%81%8F+%E6%9C%AA%E7%9F%A5%E3%81%AE%E9%81%BA%E4%BC%9D%E8%A6%81%E5%9B%A0%E3%81%AE%E6%8E%A2%E7%B4%A2%E3%81%A8%E7%96%BE%E6%82%A3%E3%83%AA%E3%82%B9%E3%82%AF%2Cstripbooks%2C331&sr=1-1" target="_blank" rel="noopener noreferrer">
+                    <img src="https://m.media-amazon.com/images/I/51d1zz6Y9YL._SY522_.jpg" alt="No image">
+                </a>
+                <div class="book-text">
+                  <h5>全ゲノム・エクソーム遺伝統計解析</h5>
+                  <p>田宮 元</p><br>
+                  <p>シーケンスの基礎から実際のコーディングまで実践できるいい機会でした。</p>
+                  <p style="text-decoration: line-through;">サンプルコードが動かなかったり、スパコン前提の解析だったりしてかなり苦戦した記憶</p>
+                </div>
+            </div>
+
+            <div class="book-box">
+                <a href="https://www.amazon.co.jp/%E5%AE%9F%E8%B7%B5Data-Science%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-R%E3%81%A7%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B%E5%9C%B0%E7%90%86%E7%A9%BA%E9%96%93%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90%E5%85%A5%E9%96%80-KS%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%B0%82%E9%96%80%E6%9B%B8-%E6%9D%91%E4%B8%8A/dp/406527303X?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&ref_=fplfs&psc=1&smid=AN1VRQENFRJN5%22" target="_blank" rel="noopener noreferrer">
+                    <img src="https://m.media-amazon.com/images/I/61ymui4iryL._SY522_.jpg" alt="No image">
+                </a>
+                <div class="book-text">
+                  <h5>実践Data Scienceシリーズ Rではじめる地理空間データの統計解析入門</h5>
+                  <p>村上 大輔</p><br>
+                  <p>ST解析のヒントを得ました</p>
+                  <p>Moran's Iや時間も含めた4次元解析の概念がわかって、かなり有意義でした!</p>
+                </div>
+            </div>
+
+            <div class="book-box">
+                <a href="https://www.amazon.co.jp/Python%E3%81%A7%E5%AE%9F%E8%B7%B5-%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%80%9C%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AEPC%E3%81%A7%E6%9C%80%E5%85%88%E7%AB%AF%E8%AB%96%E6%96%87%E3%81%AE%E8%A7%A3%E6%9E%90%E3%83%AC%E3%82%B7%E3%83%94%E3%82%92%E4%BD%93%E5%BE%97%E3%81%A7%E3%81%8D%E3%82%8B%EF%BC%81-%E5%AE%9F%E9%A8%93%E5%8C%BB%E5%AD%A6%E5%88%A5%E5%86%8A-%E6%B8%85%E6%B0%B4-%E7%A7%80%E5%B9%B8/dp/4758122636/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3SYPKW3L1R2BZ&dib=eyJ2IjoiMSJ9.vWU408u7g90_0EyJGLVPNc-AmYIUl2pGWQX7g0aux-5RWeH_rrApKjv084IkpWx3zBUQSfRNX3hGeGbzvvf1r_vIquUXRxFuklmhVjoW5p4.5HONq8guyY0Ih2rhlqlMTER96Mb23cb_1mAeFGOeqHA&dib_tag=se&keywords=Python%E3%81%A7%E5%AE%9F%E8%B7%B5+%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%80%9C%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AEPC%E3%81%A7%E6%9C%80%E5%85%88%E7%AB%AF%E8%AB%96%E6%96%87%E3%81%AE%E8%A7%A3%E6%9E%90%E3%83%AC%E3%82%B7%E3%83%94%E3%82%92%E4%BD%93%E5%BE%97%E3%81%A7%E3%81%8D%E3%82%8B%EF%BC%81&qid=1747755304&s=books&sprefix=%2Cstripbooks%2C178&sr=1-1" target="_blank" rel="noopener noreferrer">
+                    <img src="https://m.media-amazon.com/images/I/61pLL9ZMLWL._SY522_.jpg"" alt="No image">
+                </a>
+                <div class="book-text">
+                  <h5>Pythonで実践　生命科学データの機械学習</h5>
+                  <p>清水 秀幸</p><br>
+                  <p>特にVAEを利用したシングルセル解析が必見でした!</p>
+                  <p>改めてST解析に求められていることを考え直す期間になりました。</p>
+                </div>
+            </div>
+
+            <div class="book-box">
+                <a href="https://www.amazon.co.jp/%E7%89%A9%E4%BD%93%E3%83%BB%E7%94%BB%E5%83%8F%E8%AA%8D%E8%AD%98%E3%81%A8%E6%99%82%E7%B3%BB%E5%88%97%E3%83%87%E3%83%BC%E3%82%BF%E5%87%A6%E7%90%86%E5%85%A5%E9%96%80-TensorFlow2-PyTorch%E5%AF%BE%E5%BF%9C%E7%AC%AC2%E7%89%88-NumPy-PyTorch%E3%81%AB%E3%82%88%E3%82%8B%E5%AE%9F%E8%A3%85%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0/dp/4798063541" target="_blank" rel="noopener noreferrer">
+                    <img src="https://m.media-amazon.com/images/I/71DfmifiDgL._SY522_.jpg" alt="No image">
+                </a>
+                <div class="book-text">
+                  <h5>物体・画像認識と時系列データ処理入門</h5>
+                  <p>チーム・カルポ</p><br>
+                  <p>深層学習の基礎からCNNなどの画像解析技術を学べる入門書</p>
+                  <p style="text-decoration: line-through;">初めてのBIセミナーでガチガチに緊張していました。</p>
+                  <p style="text-decoration: line-through;">しかも深層学習自体が初心者だったので、かなり歯ごたえがありました。この本が自分の原点!</p>
+                  
+                </div>
+            </div>
+
+
+
+            <h3 class="title">その他参考図書</h3>
+            <div class="book-row">
+                <div class="book-box-row">
+                    <a href="https://www.amazon.co.jp/%E7%B4%B0%E8%83%9E%E3%81%AE%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6-%E5%8E%9F%E6%9B%B8%E7%AC%AC7%E7%89%88-%E4%B8%AD%E6%9D%91%E6%A1%82%E5%AD%90/dp/4815731314/ref=sr_1_1?dib=eyJ2IjoiMSJ9.RpisEnifiwHImZVOmgN53by9VlTRbTvS2blsyRqyM7AAZKtaC5e2BEIa4h67ya4NYaf6pqibMLHqxhplpxX_y9vO9OVx2XjaJbY-Txp4TCRFyyd9jdo5TXmE1jqpd3KWr9fJ2hBfctlCk6VnPadqxR9PKH1MsmF8-XZEN87R6WfY6pxsfPMLxilwqMqq5P8iw9wMtZoKhBJqXeW6obwRGc9GAw_7On9MeBxh-l7Uh_ROCvqhGIRf-xgKVdOo1VOQAcKlku0wOxdXvZ4sRVzZ2JLHmincyV4ZzLqeNTdMPC4.mncL782Dv7Y6ZsxubxXegrC0_oEqocUQ6KlrPqTUhQI&dib_tag=se&keywords=the+cell+%E7%B4%B0%E8%83%9E%E3%81%AE%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6+%E7%AC%AC7%E7%89%88&qid=1747750073&sr=8-1" target="_blank" rel="noopener noreferrer">
+                        <img src="https://m.media-amazon.com/images/I/61cLWRoIfYL._SY522_.jpg" alt="No image">
+                    </a>
+                    <div class="book-text">
+                    <h5>THE CELL</h5>
+                    <p>中村桂子(監修), 水島昇 ほか(翻訳)</p>
+                    </div>
+                </div>
+
+                <div class="book-box-row">
+                    <a href="https://www.amazon.co.jp/%E6%9D%B1%E5%A4%A7%E5%BC%8F-Python%E3%83%84%E3%83%BC%E3%83%AB%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9-DSTEP%E6%95%99%E6%9D%90%E4%BD%9C%E6%88%90%E5%A7%94%E5%93%A1%E4%BC%9A/dp/4758121176/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3LQ83EJO5680&dib=eyJ2IjoiMSJ9.kUB9lJCHgaMQytDcDbr6rw.ZMxUrFp8BDVSK12Q3lhzlxHJMsafzgj5e7jCL51Srxs&dib_tag=se&keywords=%E6%9D%B1%E5%A4%A7+dstep&qid=1747753269&sprefix=%E6%9D%B1%E5%A4%A7+dstep%2Caps%2C192&sr=8-1" target="_blank" rel="noopener noreferrer">
+                        <img src="https://m.media-amazon.com/images/I/61JpfZmBF2L._SY522_.jpg" alt="No image">
+                    </a>
+
+                    <div class="book-text">
+                    <h5>東大式 生命データサイエンス即戦力講座</h5>
+                    <p>DSTEP教材作成委員会</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-row">
+                <div class="book-box-row">
+                    <a href="https://www.amazon.co.jp/%E3%82%82%E3%81%A3%E3%81%A8%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%8B%EF%BC%81%E8%85%AB%E7%98%8D%E5%85%8D%E7%96%AB%E5%AD%A6%E3%80%9C%E7%99%BA%E3%81%8C%E3%82%93%E3%80%9C%E3%81%8C%E3%82%93%E3%81%AE%E9%80%B2%E5%B1%95%E3%80%9C%E6%B2%BB%E7%99%82-%E3%81%8C%E3%82%93%E5%85%8D%E7%96%AB%E5%BF%9C%E7%AD%94%E3%81%AE%E5%A4%89%E9%81%B7%E3%81%8C%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%8B-%E5%AE%9F%E9%A8%93%E5%8C%BB%E5%AD%A6%E5%88%A5%E5%86%8A-%E3%82%82%E3%81%A3%E3%81%A8%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%8B%EF%BC%81%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E8%A5%BF%E5%B7%9D-%E5%8D%9A%E5%98%89/dp/4758122121/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3IM6A1SXQF7J0&dib=eyJ2IjoiMSJ9._v1HRYfs8TJ8vhwwi5lJlIFWvUbN_cOYZct4ct_54mEHuXFpEdJBkk42WESRwhi3MeEyQ1qqBu4JvnAdcXtou09LGflJ8bp8phA7og8lFgoSL66CMy-vp7KjIlSVxVpLO-vcOGBbMgb0Wx56pabCFedzr7vDlcyO8l8kOZg-oVjJTcoQXT1PoNIIZABJyhL9-Jq_G47csdtppdNXpLdKOv5E1vRgWix1TZl9nWWMg7I0luWXWx0j6FQBF2O8VNFg.ceTsrq5N7w4LD5ALjKtefa-vK3e5RPjBx3vTxJNATF0&dib_tag=se&keywords=%E3%82%82%E3%81%A3%E3%81%A8%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%8B%E8%85%AB%E7%98%8D%E5%85%8D%E7%96%AB%E5%AD%A6&qid=1747753698&sprefix=%E3%82%82%E3%81%A3%E3%81%A8%E3%82%88%E3%81%8F%E3%82%8F%E3%81%8B%E3%82%8B%E8%85%AB%E7%98%8D%E5%85%8D%E7%96%AB%E5%AD%A6%2Caps%2C165&sr=8-1" target="_blank" rel="noopener noreferrer">
+                        <img src="https://m.media-amazon.com/images/I/61mBQiidUdL._SY522_.jpg" alt="No image">
+                    </a>
+                    <div class="book-text">
+                    <h5>もっとよくわかる！腫瘍免疫学</h5>
+                    <p>西川 博嘉</p>
+                    </div>
+                </div>
+
+                <div class="book-box-row">
+                    <a href="https://www.amazon.co.jp/%E7%B5%B1%E8%A8%88%E5%AD%A6%E5%85%A5%E9%96%80-%E5%9F%BA%E7%A4%8E%E7%B5%B1%E8%A8%88%E5%AD%A6%E2%85%A0-%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%95%99%E9%A4%8A%E5%AD%A6%E9%83%A8%E7%B5%B1%E8%A8%88%E5%AD%A6%E6%95%99%E5%AE%A4/dp/4130420658/ref=sr_1_1_sspa?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&dib=eyJ2IjoiMSJ9.y8TRwSQw6XVzlj-Pd9QOlV71WV_IFJHJxWuVEmTfk6nIkDOwCPwwnMG1DAZngz08AhuZ_YNaotE78VaX3dYmF7YQQFLuItX92r3MFunIuPKUxf3bzckzwoX2pGIyuh8PuXHQ0GVgn5KjlYvq2abR_LjWBkV2E8AdZ7n4Na0v-ZIVt94fsXNxmpskNeMh2vo8pP74ScXGEBqjif-Acn-AuQZhOF2tfxKXVe5mdYHdMyvJs9kv9gqwAeSZ1fbkuhLvZqxk0wauxINrCSPGrZXAtvP7pVtDHCyTgY6ugEgVOAE.Yg23luh1NhQekTUlJMpbSD4PXsC9WyabU9qUOHMatoU&dib_tag=se&keywords=%E7%B5%B1%E8%A8%88%E5%AD%A6%E5%85%A5%E9%96%80&qid=1747753015&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" rel="noopener noreferrer">
+                        <img src="https://m.media-amazon.com/images/I/51cTxwBhWiL._SY445_SX342_.jpg" alt="No image">
+                    </a>
+                    
+                    <div class="book-text">
+                    <h5>統計学入門 (基礎統計学Ⅰ)</h5>
+                    <p>東京大学教養学部統計学教室</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-row">
+                <div class="book-box-row">
+                    <a href="https://www.amazon.co.jp/%E7%A2%BA%E7%8E%87%E9%81%8E%E7%A8%8B%E3%81%AE%E5%9F%BA%E7%A4%8E-R-%E3%83%87%E3%83%A5%E3%83%AC%E3%83%83%E3%83%88/dp/4621061801/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2P1HX6CHYLGG3&dib=eyJ2IjoiMSJ9.C20WjzufPo4aVaESWXXdcvnfiig73cDRtITo3JS9T_QndDKzAiX7Md92UVDwy6JYeM0lx2MtI0Z0gJ4vRAdm53HwdCrTKkip5J3ZReiBYwYO2F3vyh0MdPzEX4SKymSv2zkNV0mVINlkUQ7PR2fqePj01-ODuqspmqu8NMo_foYGYAjaV3e8UAbZDbUUlbjyIjyCqxD2ioM8u1o_t2j0VOVccRKVXCTLDDUxRXjDtx6zP0lNi4SGWwAyqI1mYBli6iI4CISNZHyCxFiva-NNWJ3NJYtruwZaEXYMlQ-VGAU.1KgwEHGYpb3Ted1EleYPQiyhao3GLFe6tE-wklSso_U&dib_tag=se&keywords=%E7%A2%BA%E7%8E%87%E9%81%8E%E7%A8%8B%E3%81%AE%E5%9F%BA%E7%A4%8E&qid=1747753089&sprefix=%E7%A2%BA%E7%8E%87%E9%81%8E%E7%A8%8B%E3%81%AE%E5%9F%BA%E7%A4%8E%2Caps%2C253&sr=8-1" target="_blank" rel="noopener noreferrer">
+                        <img src="https://m.media-amazon.com/images/I/61zjgSW3JYL._SY522_.jpg" alt="No image">
+                    </a>
+                    <div class="book-text">
+                    <h5>確率過程の基礎</h5>
+                    <p>R.デュレット(著), 今野紀雄 ほか(翻訳)</p>
+                    </div>
+                </div>
+
+                <div class="book-box-row">
+                    <a href="https://www.amazon.co.jp/Vision-Transformer%E5%85%A5%E9%96%80-Computer-Library/dp/4297130580/ref=sr_1_1?crid=PGS36F7DR44Z&dib=eyJ2IjoiMSJ9.CHrzRreDTq-u1ra5XdMq1H0PN7ukr3pUDY7aJ_lOcQAlIVKQXFciZiRPidY6xeurCJhfeN56KM9d3buWf_QRJtnQX20Y_EAhyOawM4mVEYLYI75gB-G8a-QjfSH8b2_5uEfGjYelhPzH5Mt-btID7KHoXp7q2ypSosbFDL_5SGI0E1kgGRpOoBawa0Odq8eOlq45J5Y_FvH0OT4UMH_l2w.FvJ8jvVwNFZD7keWgU_5bV6IF8Rl6VSZvkpsJ88IX4M&dib_tag=se&keywords=vision+transformer%E5%85%A5%E9%96%80&qid=1747753450&sprefix=vision+trans%2Caps%2C212&sr=8-1" target="_blank" rel="noopener noreferrer">
+                        <img src="https://m.media-amazon.com/images/I/81pOveY+RIL._SY522_.jpg" alt="No image">
+                    </a>
+                    <div class="book-text">
+                    <h5>Vision Transformer入門</h5>
+                    <p>山本 晋太郎 など(著), 片岡 裕雄(監修)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-row">
+                <div class="book-box-row">
+                    <a href="https://www.amazon.co.jp/BERT%E3%81%AB%E3%82%88%E3%82%8B%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86%E5%85%A5%E9%96%80-Transformers%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E5%AE%9F%E8%B7%B5%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0-%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%AF%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE/dp/427422726X/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=91U33XNGRUFH&dib=eyJ2IjoiMSJ9.1KvmDh0wk34dMP0f59w_lUfCbjdohY-lGgZTVn14Ks5cNF1xh6dJEadDHqMnV9pohg2E4smmprvwTaYJa6uhHMAktPtX1kQSuTlEvVgp9WgP3QKJ_ZyVFa6Sw8ZUp1KBkCEw6XbXW4KEShS5ZdrIQVbOOxHOlmb3avXw62G_1bzoPMAPOLsrb0qpmKE1ZPDYujRCm3F8J_lvNNpQqLWw7pdQ2cHv7YOLkONLVGkbdXRdFmEJ69wW9GReWf0jNGNtmSnUWxFP8fWX4eHUsY3_ZfKzlXUd6noiEhLeH2ioI2w.N-GIAL9M0mSBMbBgezgIO15di2lA5yvFGEzCOA8-F5M&dib_tag=se&keywords=bert+%E5%85%A5%E9%96%80&qid=1747753810&sprefix=bert+%E5%85%A5%E9%96%80%2Caps%2C240&sr=8-1" target="_blank" rel="noopener noreferrer">
+                        <img src="https://m.media-amazon.com/images/I/71oOctdyAHS._SY522_.jpg"" alt="No image">
+                    </a>
+                    <div class="book-text">
+                    <h5>BERTによる自然言語処理入門</h5>
+                    <p>ストックマーク株式会社(編集), 近江 崇宏 など(著)</p>
+                    </div>
+                </div>
+
+                <div class="book-box-row">
+                    <a href="https://www.amazon.co.jp/%E3%81%BF%E3%82%93%E3%81%AA%E3%81%AEPython-%E7%AC%AC4%E7%89%88-%E6%9F%B4%E7%94%B0-%E6%B7%B3/dp/479738946X/ref=sr_1_1?adgrpid=56053864951&dib=eyJ2IjoiMSJ9.7R6oi94G6FhTpqmuqMWDFkp5apm46tVpnIJwFY2ldJOc_nKfGGhXgv-62ahlNZBxYksFUsV0CqrAIeFGLDs2Sbk74wfXhp4LMqjwWSW5QaaNveE6xO5uz9_mKmaX77msOCWbPAOhLbRaQqE02JLLkpsH3YbliPEZuZWJWHrorG8hvyhONVP3V3lu1NxYQ1SFzciQfmhBCe96NGZl6AKh4bljz09kMpcl9Fgf4TNv818IrNqcXZJhIN7ceYq1aDoMB1C0YSv_aTm6kpki2mPrC94S5oTPp8_g9O7z0pyjKx0.2E_nQXKpS9Bj0dLbh9SnHt58BgwpT8yI5fth-dzczdo&dib_tag=se&hvadid=679074568952&hvdev=c&hvlocphy=1009255&hvnetw=g&hvqmt=e&hvrand=17186583108525922483&hvtargid=kwd-398175049877&hydadcr=27263_14738623&jp-ad-ap=0&keywords=%E3%81%BF%E3%82%93%E3%81%AA%E3%81%AEpython&mcid=064d5c8b1bdc34249d01ad5f63d4e25f&qid=1747756964&sr=8-1" target="_blank" rel="noopener noreferrer">
+                        <img src="https://m.media-amazon.com/images/I/71a1+UgTU7L._SY522_.jpg" alt="No image">
+                    </a>
+                    <div class="book-text">
+                    <h5>みんなのPython 第4版</h5>
+                    <p>柴田 淳)</p>
+                    </div>
+                </div>
+            </div>
+
+        <h3 class="title">番外編 プライベート</h3>
+        <h4>M2にしてはじめての海外 (シドニー、 2ヶ月)</h4>
+        <h4>英語に囲まれることも、信号のわたり方がわからなかったことも、すべて新鮮でした。</h4>
+        <h4>「自分らしく」生きることを思い出せました! いつか海外で研究者として働きたい!</h4>
+
+        <div class="book-row">
+            <div class="book-box-row">
+                    <img src="img/sydney_arrival.png" alt="No image">
+                <div class="book-text">
+                <h5>空港からホームステイ先まで</h5>
+                <p>ホストマザーに30分くらいかけて迎えに来てもらいました。</p>
+                <p style="text-decoration: line-through;">緊張しすぎて一番記憶に残っている。</p>
+                </div>
+            </div>
+
+            <div class="book-box-row">
+                    <img src="img/sydney_homestay.png" alt="No image">
+                <div class="book-text">
+                <h5>ホームステイ先での日常</h5>
+                <p>タイ/韓国などのホームメイトと過ごしました! 本当にみんなに感謝</p>
+                <p style="text-decoration: line-through;">帰り際号泣した。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-row">
+            <div class="book-box-row">
+                    <img src="img/sydney_sea.png" alt="No image">
+                <div class="book-text">
+                <h5>キアマの風景</h5>
+                <p>ルームメイトと電車で2時間かけていった思い出</p>
+                <p style="text-decoration: line-through;">暑すぎて記憶も溶けかかっている。</p>
+                </div>
+            </div>
+
+            <div class="book-box-row">
+                    <img src="img/sydney_class.png" alt="No image">
+                <div class="book-text">
+                <h5>学校</h5>
+                <p>いろんな国籍の人がいて、色々ディスカッションした。自分から飛び込んでいくことが何より大事だってことに気づいた。</p>
+                <p style="text-decoration: line-through;">この写真は先生のインスタからです。自分が映ってない(涙)</p>
+                </div>
+            </div>
+        </div>
+
+
+        </section>
+
+    </main>
+
+</body>
+</html>
