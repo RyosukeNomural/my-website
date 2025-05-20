@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RyosukeNomura</title>
+    <title>Ryosuke Nomura 野村亮輔</title>
     <!-- リセットCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
     <!-- style.css -->
@@ -26,6 +26,32 @@
       });
     });
 </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // メニュー開閉
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.header_menu');
+  
+      if (menuToggle && menu) {
+        menuToggle.addEventListener('click', function () {
+          menu.classList.toggle('active');
+        });
+      }
+  
+      // TOPへ戻るボタン
+      const backToTop = document.getElementById("backToTop");
+      if (backToTop) {
+        backToTop.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      }
+    });
+  </script>
+  
 
 <body>
 
@@ -257,6 +283,11 @@
         </section>
 
     </main>
+
+<div class="copyright container">
+    <p>Copyright © Ryosueke Nomura. All Rights Reserved.</p>
+    <button id="backToTop">▲ TOP</button>
+</div>
 
 </body>
 </html>
