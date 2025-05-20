@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="野村亮輔です。駆け出しバイオインフォマティシャン!　所属 東京大学(東大)"">
     <title>RyosukeNomura</title>
     <!-- リセットCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
@@ -17,6 +16,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.header_menu');
+  
+      menuToggle.addEventListener('click', function () {
+        menu.classList.toggle('active');
+      });
+    });
+</script>
 
 <body>
 
@@ -25,6 +34,7 @@
             <a href="index.html" class="logo">
                 <span>Nomu</span>pedia
             </a>
+            <div class="menu-toggle">☰</div> <!-- ハンバーガーアイコン -->
             <nav>
                 <ul class="header_menu flex">
                     <li><a href="index.html">Home</a></li>
@@ -48,8 +58,8 @@
                     <ul>
                         <li>2018年 東京都立日比谷高等学校 卒業</li>
                         <li>2023年 慶應義塾大学 理工学部 生命情報学科 卒業</li>
-                        <li>2023年 東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 入学</li>
-                        <li>2025年 東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 卒業</li>
+                        <li>2023年 東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 修士課程入学</li>
+                        <li>2025年 東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 修士課程卒業</li>
                         <li>2025年 東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 博士後期課程入学</li>
                     </ul>
                 </div>
@@ -57,34 +67,35 @@
         </section>
 
         <section id="map" class="container">
-        <table>
-
-        <tr>
-            <th>大学院ホームページ</th>
-            <td>
-                東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 
-                <a href="https://www.cbms.k.u-tokyo.ac.jp/">
-                (<font style="color: blue;">リンク</font>)     
-                </a>
-            </td>
-            </tr>   
-        <tr>
-        <th>研究室</th>
-        <td>
-            国立研究開発法人国立がん研究センター 先端医療開発センター トランスレーショナルインフォマティクス分野
-            <a href="https://www.ncc.go.jp/jp/epoc/division/translational_informatics/kashiwa/index.html">
-            (<font style="color: blue;">リンク</font>)     
-            </a>
-        </td>
-        </tr>
-        <tr>
-            <th>研究室住所</th>
-            <td>
-                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.874962525049!2d139.9392835792063!3d35.90107792558898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189c018596607b%3A0x7ab0e179993cddc3!2z5Zu956uL44GM44KT56CU56m244K744Oz44K_44O85p2x55eF6Zmi!5e0!3m2!1sja!2sjp!4v1671013263136!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </td>
-            </tr>
-        </table>
+            <div class="table-wrapper">
+                <table>
+                <tr>
+                    <th>大学院HP</th>
+                    <td>
+                        東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 
+                        <a href="https://www.cbms.k.u-tokyo.ac.jp/">
+                        (<font style="color: blue;">リンク</font>)     
+                        </a>
+                    </td>
+                    </tr>   
+                <tr>
+                    <th>研究室</th>
+                    <td>
+                        国立研究開発法人国立がん研究センター 先端医療開発センター トランスレーショナルインフォマティクス分野
+                        <a href="https://www.ncc.go.jp/jp/epoc/division/translational_informatics/kashiwa/index.html">
+                        (<font style="color: blue;">リンク</font>)     
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>研究室住所</th>
+                    <td>
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.874962525049!2d139.9392835792063!3d35.90107792558898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189c018596607b%3A0x7ab0e179993cddc3!2z5Zu956uL44GM44KT56CU56m244K744Oz44K_44O85p2x55eF6Zmi!5e0!3m2!1sja!2sjp!4v1671013263136!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </td>
+                    </tr>
+                </table>
+            </div>
         </section>
     </main>
 
