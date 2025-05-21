@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryosuke Nomura 野村亮輔</title>
+    <title>野村亮輔　東京大学　新領域総務係様</title>
     <meta name="description" content="野村亮輔です。駆け出しバイオインフォマティシャン! 所属 東京大学(東大)"">
 
 
@@ -20,41 +20,30 @@
 </head>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const menuToggle = document.querySelector('.menu-toggle');
-      const menu = document.querySelector('.header_menu');
-  
+  document.addEventListener('DOMContentLoaded', function () {
+    // メニュー開閉
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.header_menu');
+
+    if (menuToggle && menu) {
       menuToggle.addEventListener('click', function () {
         menu.classList.toggle('active');
       });
-    });
+    }
+
+    // TOPへ戻るボタン
+    const backToTop = document.getElementById("backToTop");
+    if (backToTop) {
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    }
+  });
 </script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // メニュー開閉
-      const menuToggle = document.querySelector('.menu-toggle');
-      const menu = document.querySelector('.header_menu');
-  
-      if (menuToggle && menu) {
-        menuToggle.addEventListener('click', function () {
-          menu.classList.toggle('active');
-        });
-      }
-  
-      // TOPへ戻るボタン
-      const backToTop = document.getElementById("backToTop");
-      if (backToTop) {
-        backToTop.addEventListener("click", () => {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
-        });
-      }
-    });
-  </script>
-  
   
 <body>
 
@@ -80,17 +69,25 @@
     <main>
         <section id="hero" class="container">
             <div class="hero_inner">
-                <p class="pop">プロフェッショナル</p>
-                <h1>研究の流儀</h1>
+
             </div>
         </section>
-
-
     
+        <video src="img/dna.mp4" autoplay loop muted></video>
+
+        <div class="overlay"></div>
+
+        <div class="video-text">
+          <h2>Welcome</h2>
+          <h3>To a new frontier!</h3>
+          <p>As a next-generation bioinformatician</p>
+          <p>With a strong belief in contributing to cancer research</p>
+        </div>
+            
     </main>
 
     
-<div class="copyright container">
+<div class="copyright">
     <p>Copyright © Ryosueke Nomura. All Rights Reserved.</p>
     <button id="backToTop">▲ TOP</button>
 </div>
