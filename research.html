@@ -17,41 +17,30 @@
 </head>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const menuToggle = document.querySelector('.menu-toggle');
-      const menu = document.querySelector('.header_menu');
-  
+  document.addEventListener('DOMContentLoaded', function () {
+    // メニュー開閉
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.header_menu');
+
+    if (menuToggle && menu) {
       menuToggle.addEventListener('click', function () {
         menu.classList.toggle('active');
       });
-    });
+    }
+
+    // TOPへ戻るボタン
+    const backToTop = document.getElementById("backToTop");
+    if (backToTop) {
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    }
+  });
 </script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // メニュー開閉
-      const menuToggle = document.querySelector('.menu-toggle');
-      const menu = document.querySelector('.header_menu');
-  
-      if (menuToggle && menu) {
-        menuToggle.addEventListener('click', function () {
-          menu.classList.toggle('active');
-        });
-      }
-  
-      // TOPへ戻るボタン
-      const backToTop = document.getElementById("backToTop");
-      if (backToTop) {
-        backToTop.addEventListener("click", () => {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
-        });
-      }
-    });
-  </script>
-  
 
 <body>
 
