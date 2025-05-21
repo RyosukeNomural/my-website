@@ -84,6 +84,7 @@ header {
     }
 }
 
+
 .copyright {
     position: relative;
     display: flex;
@@ -137,11 +138,9 @@ header {
   z-index: 1;
   transition: background-color 0.3s;
 }
-  
 #backToTop:hover {
-background-color: #e0f2d9;
+    background-color: #e0f2d9;
 }
-  
 
 @media (max-width: 768px) {
     .copyright {
@@ -202,16 +201,10 @@ background-color: #e0f2d9;
     }
 
 }  
+
 /*メイン*/
 #hero {
-    background-image: url(../img/meal.png);
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 90px;
-    overflow: hidden;
+    background-image: none;
 }
 #hero::before {
     content: "";
@@ -241,17 +234,62 @@ background-color: #e0f2d9;
     font-weight: 700;
     margin-bottom: 30px;
 }
+
+main {
+    min-height: 100vh; /* 画面の高さ分は確保 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+ main video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+ }
+
+ .video-text {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* 動画より上に出す */
+    color: #fff;
+    text-align: left;
+}
+.video-text h2{
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1em;
+}
+
+.video-text h3{
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1em;
+    margin-bottom: 50px;
+}
+.video-text p{
+    font-size: 20px;
+    margin-top: 50px 0;
+    font-weight: 600;
+    color: #fff;
+    width: 700px;
+    line-height: 1em;
+}
+
+
 @media (max-width: 768px) {
     #hero {
-        padding: 60px 15px;
-        background-image: url(../img/meal.png);
-        background-position: center;
-        background-size: cover;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        margin-bottom: 50px;
-        overflow: hidden;
+        background-image: none;
     }
     .hero_inner p {
         font-size: 16px;
@@ -260,12 +298,19 @@ background-color: #e0f2d9;
     .hero_inner h1 {
         font-size: 28px;
     }
+    
+    main video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+     }
 }
 
-main {
-    padding-top: 90px;  /* ヘッダーの分の余白 */
-  }
- 
+
+
 /* -------------------------------------------------------------------- */ 
 /*About me*/
 #about-me {
@@ -675,3 +720,6 @@ font-size: 18px;
         font-size: 12px;
     }
 }
+
+
+
